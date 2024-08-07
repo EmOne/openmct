@@ -89,6 +89,9 @@ import WebPagePlugin from './webPage/plugin.js';
 import YamcsPlugin from './yamcs-openmct-plugin/yamcs.js';
 import installYamcsPlugin from 'openmct-yamcs';
 
+/**
+ * @type {Object}
+ */
 const plugins = {};
 
 plugins.example = {};
