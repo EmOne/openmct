@@ -86,6 +86,8 @@ import UTCTimeSystem from './utcTimeSystem/plugin.js';
 import ViewDatumAction from './viewDatumAction/plugin.js';
 import ViewLargeAction from './viewLargeAction/plugin.js';
 import WebPagePlugin from './webPage/plugin.js';
+import YamcsPlugin from './yamcs-openmct-plugin/yamcs.js';
+import installYamcsPlugin from 'openmct-yamcs';
 
 const plugins = {};
 
@@ -173,5 +175,7 @@ plugins.Gauge = GaugePlugin;
 plugins.Timelist = TimeList;
 plugins.InspectorViews = InspectorViews;
 plugins.InspectorDataVisualization = InspectorDataVisualization;
+plugins.YamcsPlugin = YamcsPlugin;
+plugins.installYamcsPlugin = installYamcsPlugin;
 
 export default plugins;
