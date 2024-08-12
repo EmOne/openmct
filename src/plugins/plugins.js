@@ -87,7 +87,7 @@ import ViewDatumAction from './viewDatumAction/plugin.js';
 import ViewLargeAction from './viewLargeAction/plugin.js';
 import WebPagePlugin from './webPage/plugin.js';
 import YamcsPlugin from './yamcs-openmct-plugin/yamcs.js';
-import installYamcsPlugin from 'openmct-yamcs';
+import installYamcsPlugin from './openmct-yamcs/src/openmct-yamcs.js';
 
 /**
  * @type {Object}

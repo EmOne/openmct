@@ -1,3 +1,6 @@
 [submodule "src/plugins/yamcs-openmct-plugin"]
 	path = src/plugins/yamcs-openmct-plugin
 	url = git@github.com:EmOne/yamcs-openmct-plugin.git
+[submodule "src/plugins/openmct-yamcs"]
+	path = src/plugins/openmct-yamcs
+	url = git@github.com:EmOne/openmct-yamcs.git

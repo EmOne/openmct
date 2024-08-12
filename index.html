@@ -235,19 +235,22 @@
       openmct.install(openmct.plugins.BarChart());
       openmct.install(openmct.plugins.ScatterPlot());
 
-      openmct.install(
-          openmct.plugins.YamcsPlugin({
-            host: 'localhost', // defaults to localhost
-            port: '8090', // defaults to 8090
-            instance: 'myproject' // defaults to simulator
-        })
-      );
+      // openmct.install(
+      //     openmct.plugins.YamcsPlugin({
+      //       host: 'localhost', // defaults to localhost
+      //       port: '8090', // defaults to 8090
+      //       instance: 'myproject' // defaults to simulator
+      //   })
+      // );
       openmct.install(openmct.plugins.installYamcsPlugin({
           "yamcsDictionaryEndpoint": "http://localhost:8090/",
           "yamcsHistoricalEndpoint": "http://localhost:8090/",
           "yamcsWebsocketEndpoint": "http://localhost:8090/api/websocket",
           "yamcsInstance": "myproject",
-          "yamcsFolder": "myproject"
+          "yamcsFolder": "myproject",     
+          yamcsProcessor: "realtime",
+          throttleRate: 1000,
+          maxBatchSize: 20
       }));
 
       document.addEventListener('DOMContentLoaded', function () {

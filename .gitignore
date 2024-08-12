@@ -17,6 +17,7 @@
 
 # VSCode
 .vscode/settings.json
+.history
 
 # Build output
 target
